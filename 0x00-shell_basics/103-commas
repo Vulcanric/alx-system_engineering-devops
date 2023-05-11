@@ -1,0 +1,3 @@
+#!/bin/bash
+ls -alv | awk '{ if (substr($1, 1, 1) == "d") { printf "%s/,%s,", $9, $10 } else { printf "%s,", $9 } }' | sort -k1.2 | sed -e 's/,$/\n/'
+

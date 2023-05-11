@@ -1,11 +1,2 @@
 #!/bin/bash
-#!/bin/bash
-
-parent_dir=$(dirname "$(pwd)")
-
-for file in *.html
-do
-    if [[ "$file" -nt "$parent_dir/$file" ]]; then
-        cp "$file" "$parent_dir"
-    fi
-done
+cp -i /alx-system_engineering-devops/0x00-shell_basics/*.html /alx-system_engineering-devops
