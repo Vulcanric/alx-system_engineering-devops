@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Displays all Bash processes in user-oriented format and hierarchy
+./1-list_your_processes | grep bash
