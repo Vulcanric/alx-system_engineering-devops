@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
-# This script terminates the last running proccess that is not this script
-# Kill the running PID that is 2 second older than this script
-kill "$(pgrep -O 2 bash | tail -n 1)"
+# This script terminates the 4-to_infinity_and_beyond script
+kill "$(ps a | grep '4-to_infinity_and_beyond' | cut -d ' ' -f 2 | head -n 1)"
