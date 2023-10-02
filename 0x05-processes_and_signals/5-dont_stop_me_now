@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # This script terminates the last running proccess that is not this script
 # Kill the running PID that is 2 second older than this script
-pgrep -O 2 bash | tail -n 1 > pid
-kill "$(cat pid)" && rm pid
+pid="$(pgrep -O 2 bash | tail -n 1)"; kill "$pid"
