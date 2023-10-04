@@ -57,9 +57,9 @@ else
 fi
 EXITSTAT="echo $?"
 if [ "$EXITSTAT" -ne 0 ]; then
-	echo "\033[31;1m{ Failed to push files: $* }\033[0m"
+	echo -e "\033[31;1m{ Failed to push files: '$*' }\033[0m"
 	exit 1
 else
-	echo "\033[33m{ Successfully pushed: $* }\033[0m"
+	echo -e "\033[33m{ Successfully pushed: '$*' }\033[0m"
 	exit 0
 fi
