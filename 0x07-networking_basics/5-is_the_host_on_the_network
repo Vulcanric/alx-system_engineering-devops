@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Pings an IP address to acertain its availability
-if [ $# -ne 0 ]
+if [ $# -eq 0 ]
 then
 	echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
 else
