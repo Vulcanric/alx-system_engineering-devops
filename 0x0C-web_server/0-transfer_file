@@ -1,15 +1,18 @@
 #!/usr/bin/env bash
-# Securely transport a file from local machine to a remote server
-if [ $# -lt 4 ]
+# A script that securely transport a file to a server
+set -x
+# Incomplete transport details
+if [ $# -lt 3 ]
 then
-	echo "Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
+	echo "Usage: 0-tranfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
 	exit 1
 else
-	PATH_TO_FILE=$1
-	IP=$2
-	USERNAME=$3
-	PATH_TO_SSH_KEY=$4
-	DESTINATION_DIRECTORY="~/"
+	PATH_TO_FILE=$1		# First argument passed
+	IP=$2			# Second ...	
+	USERNAME=$3		# Third ...
+	PATH_TO_SSH_KEY=$4	# Fourth ... Optional because it can be specified in config
 
-	scp -i "$PATH_TO_SSH_KEY" "$PATH_TO_FILE" "$USERNAME"@"$IP":"$DESTINATION_DIRECTORY"
+	# DESTINATION_DIRECTORY=~/
+
+	scp -i "$PATH_TO_SSH_KEY" "$PATH_TO_FILE" "$USERNAME"@"$IP":
 fi
