@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # A script that securely transport a file to a server
-set -x
+
 # Incomplete transport details
 if [ $# -lt 3 ]
 then
@@ -12,7 +12,7 @@ else
 	USERNAME=$3		# Third ...
 	PATH_TO_SSH_KEY=$4	# Fourth ... Optional because it can be specified in config
 
-	# DESTINATION_DIRECTORY=~/
+	DESTINATION_DIRECTORY="/home/ubuntu"
 
-	scp -i "$PATH_TO_SSH_KEY" "$PATH_TO_FILE" "$USERNAME"@"$IP":
+	scp -i "$PATH_TO_SSH_KEY" "$PATH_TO_FILE" "$USERNAME"@"$IP":"$DESTINATION_DIRECTORY"
 fi
