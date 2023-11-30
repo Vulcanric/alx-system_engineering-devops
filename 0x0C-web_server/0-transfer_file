@@ -5,14 +5,13 @@
 if [ $# -lt 3 ]
 then
 	echo "Usage: 0-tranfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY"
-	exit 1
 else
 	FILE=$1		# First argument passed
 	IP=$2			# Second ...	
 	USERNAME=$3		# Third ...
 	SSH_KEY=$4	# Fourth ... Optional because it can be specified in config
 
-	DESTINATION_DIRECTORY="/home/ubuntu"
+	DESTINATION_DIR="/home/ubuntu"
 
-	scp -o StrictHostKeyChecking=no -i "$SSH_KEY" "$FILE" "$USERNAME"@"$IP":"$DESTINATION_DIRECTORY"
+	scp -o StrictHostKeyChecking=no -i "$SSH_KEY" "$FILE" "$USERNAME"@"$IP":"$DESTINATION_DIR"
 fi
