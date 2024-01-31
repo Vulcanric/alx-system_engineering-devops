@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# print
-sudo netstat -pl
