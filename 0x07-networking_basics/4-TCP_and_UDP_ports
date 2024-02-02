@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Prints all listening ports (only) along with their program name and Process ID
+netstat -lp
