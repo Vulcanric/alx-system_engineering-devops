@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Displays ip addresses of active IPv4 IP
+netstat -r | cut -d ' ' -f 1
