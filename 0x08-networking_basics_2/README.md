@@ -1,5 +1,6 @@
 # 0x08. Networking Basics #1
 ***Continuation to the*** [0x07-networking_basics](https://github.com/Vulcanric/alx-system_engineering-devops/tree/master/0x07-networking_basics) project.
+
 ![127.0.0.1](https://github.com/Vulcanric/alx-system_engineering-devops/blob/master/0x08-networking_basics_2/docs/127.0.0.1%20home%20sweet%20home.png)
 ## Concepts Learned
 1. What is localhost? - 
