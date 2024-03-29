@@ -1,7 +1,6 @@
-<img src='./project_img/configuration_management.jpg' width="1000" height="500">
-
 ## Configuration Management (Puppet)
 This project was done to get familiar with Configuration Management(CM) as a devOps engineer. **Puppet** was used as the Configuration Management Tool with very basic tasks done to get familiar with the Puppet syntax.
+<img src='./project_img/configuration_management.jpg' width="1000" height="500">
 
 ### What's Configuration Management, CM?
 Configuration Management is the process of configuring networking machines inorder to reach or maintain a desired state.
