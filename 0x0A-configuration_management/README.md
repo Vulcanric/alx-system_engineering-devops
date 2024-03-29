@@ -1,4 +1,4 @@
-<img src='./project_img/configuration_management.jpg' width="100vw" height="600">
+<img src='./project_img/configuration_management.jpg' width="1000" height="500">
 
 ## Configuration Management (Puppet)
 This project was done to get familiar with Configuration Management(CM) as a devOps engineer. **Puppet** was used as the Configuration Management Tool with very basic tasks done to get familiar with the Puppet syntax.
