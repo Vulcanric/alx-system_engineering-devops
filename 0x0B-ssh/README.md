@@ -8,4 +8,4 @@ This project is the second project of the DevOps and System Administration proje
 
 This project contains Bash scripts and Puppet Manifests that are used to communicate to a remote server via the SSH Client.
 
-![ssh encryption](https://www.bing.com/images/create/encryption-with-ssh/1-660b748206d141ff9e65a2c6dd65a356?id=yHpXAuUbAEHorAg13HTKHQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thid=OIG3.CE3d5PRV90JgOV9fYeX6&frame=sydedg&form=SYDBIC)
+<img src='https://www.bing.com/images/create/encryption-with-ssh/1-660b748206d141ff9e65a2c6dd65a356?id=yHpXAuUbAEHorAg13HTKHQ%3D%3D&view=detailv2&idpp=genimg&idpclose=1&thid=OIG3.CE3d5PRV90JgOV9fYeX6&frame=sydedg&form=SYDBIC' alt='ssh_encryption'>
