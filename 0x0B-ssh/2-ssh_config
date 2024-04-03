@@ -1,0 +1,8 @@
+# SSH Client Configuration
+# This file is an example of a client configuration file for SSH which I use to configure the SSH client to my needs.
+# What it does?
+# Stops the SSH Client from authenticating with password and sets Private key file to ~/.ssh/school
+# This is a system-wide configuration * - works for all host
+Host *
+  PasswordAuthentication no
+  IdentityFile ~/.ssh/school
