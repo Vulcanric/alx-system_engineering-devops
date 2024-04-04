@@ -8,3 +8,11 @@ PasswordAuthentication no' -e '/IdentityFile/ c \
 IdentityFile ~/.ssh/school' /etc/ssh/ssh_config",
   path    => '/usr/bin:/bin',
 }
+
+## OR
+
+# Overwrite the file
+file { '/etc/ssh/ssh_config':
+  ensure  => file,
+  content => 'Host *\n  PasswordAuthentication no\n  IdentityFile ~/.ssh/school',
+}
