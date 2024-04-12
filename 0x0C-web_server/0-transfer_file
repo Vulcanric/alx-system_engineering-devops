@@ -11,11 +11,10 @@ USAGE='Usage: 0-transfer_file PATH_TO_FILE IP USERNAME PATH_TO_SSH_KEY'
 if [ "$#" -ne 4 ]
 then
 	echo "$USAGE"
-	exit
 else
 	FILE_PATH="$1"
 	IP="$2"
 	USERNAME="$3"
 	IDENTITY_FILE="$4"  # SSH private key file
+	scp -i "$IDENTITY_FILE" "$FILE_PATH" "$USERNAME"@"$IP":
 fi
-scp -i "$IDENTITY_FILE" "$FILE_PATH" "$USERNAME"@"$IP":~/
