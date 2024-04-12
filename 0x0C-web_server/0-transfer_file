@@ -18,4 +18,4 @@ else
 	USERNAME="$3"
 	IDENTITY_FILE="$4"  # SSH private key file
 fi
-scp -i "$IDENTITY_FILE" "$FILE_PATH" "$USERNAME"@"$IP":
+scp -i "$IDENTITY_FILE" "$FILE_PATH" "$USERNAME"@"$IP":~/
