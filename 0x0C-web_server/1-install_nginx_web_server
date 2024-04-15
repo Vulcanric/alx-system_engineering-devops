@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+### Script that installs and configures NGINX
+### After script is ran, when querying the server via
+### its IP, you'll get a response of "Hello World!"
+
+## Update package list to get the latest version
+apt-get -y upgrade
+apt-get -y update
+
+apt-get -y install nginx
+
+## Configure webserver response
+echo "Hello World!" > /var/www/html/response.html
+sed -i -e 's/index.nginx-debian.html/response.html/' /etc/nginx/sites-available/default
+
+## Restart NGINX to enable changes
+service nginx restart
