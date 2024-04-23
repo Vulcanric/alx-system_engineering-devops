@@ -2,4 +2,4 @@
 # Redirects the url path: /redirect_me
 
 sed -i -e '48 s/\//\/redirect_me/' /etc/nginx/sites-available/default
-sed -i -e '51 s/try $uri $uri\/ =404;/return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;/' /etc/nginx/sites-available/default
+sed -i -e "51 s/try $uri $uri\/ =404;/return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;/" /etc/nginx/sites-available/default
