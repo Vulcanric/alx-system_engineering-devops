@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+### Gets Apache to run on a container and return a page containing 'Hello Holberton' when queried
+
+## Making backup of Apache's root file
+cp /var/www/html/index.html /var/www/html/index.html.bak
+## Inputting the message
+echo "Hello Holberton" > /var/www/html/index.html
+## Restarting the apache's service
+service apache2 restart
