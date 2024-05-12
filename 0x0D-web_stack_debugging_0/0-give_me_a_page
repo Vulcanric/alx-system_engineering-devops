@@ -3,8 +3,8 @@
 ### The problem with the container is that the Apache's service is not started
 
 ### To fix this ...
-docker run -p 8080:80 -d -it holbertonschool/265-0 service apache2 start
-# service apache2 start
+# docker run -p 8080:80 -d -it holbertonschool/265-0 service apache2 start
+service apache2 start
 
 # How does it work
 ###################
