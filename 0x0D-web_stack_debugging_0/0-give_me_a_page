@@ -1,9 +1,18 @@
 #!/usr/bin/env bash
 ### Gets Apache to run on a container and return a page containing 'Hello Holberton' when queried
+### The problem with the container is that the Apache's service is not started
 
-## Making backup of Apache's root file
-cp /var/www/html/index.html /var/www/html/index.html.bak
-## Inputting the message
-echo "Hello Holberton" > /var/www/html/index.html
-## Restarting the apache's service
-service apache2 restart
+### To fix this ...
+docker run -p 8080:80 -d -it holbertonschool/265-0 service apache2 start
+
+# How does it work
+###################
+# Synopsis: docker [OPTION] COMMAND ARG [ARGS ...]
+# Docker run command will create a new holbertonschool/265-0 image container
+# and runs the command after the image name in it.
+# The -p option maps port 8080 on localhost(machine running docker) to port 80
+# of the container, so every request made to localhost:8080 will be sent to container's port 80.
+# -d, specifies that it should run in background
+# -it, the -i means it should be interactive(Display output of container's processes)
+	# -t means it should display a shell, but this wouldn't work because of -d
+# `service apache2 start` - start up the webserver's service
