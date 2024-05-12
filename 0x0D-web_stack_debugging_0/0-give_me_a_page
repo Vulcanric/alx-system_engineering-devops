@@ -5,6 +5,7 @@
 ### To fix this ...
 # docker run -p 8080:80 -d -it holbertonschool/265-0 service apache2 start
 service apache2 start
+echo apache2 is running
 
 # How does it work
 ###################
